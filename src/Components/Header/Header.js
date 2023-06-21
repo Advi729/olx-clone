@@ -58,7 +58,7 @@ function Header() {
           {user ? (<span>Welcome {user?.displayName}</span>) : (<Link to='/login'><span onClick={()=>handleLogin}>Log In</span></Link>)}
           <hr />
         </div>
-        {user && <Link><span onClick={()=>handleLogOut}>Log Out</span></Link>}
+        {user && <span onClick={handleLogOut}>Log Out</span>}
         
         <div className="sellMenu">
           <SellButton/>
